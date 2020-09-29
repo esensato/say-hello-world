@@ -9,9 +9,9 @@ app.use(cors())
 
 var mural = []
 
-app.get("/:to", (request, response) => {
+app.get("/", (request, response) => {
     response.setHeader('Content-Type', 'application/json');
-    response.send({mensagem: "Olá"})
+    response.send("Mural de recados...")
 
 })
 
